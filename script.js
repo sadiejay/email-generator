@@ -23,3 +23,10 @@ const removeWhitespace = (str) => {
 }
 removeWhitespace(" Jo Ann ");
 console.log(removeWhitespace("  Jo Ann  "));
+
+// change to lowercase
+const lowerCase = (str) => {
+    let textLowerCase = str.toLowerCase();
+    return textLowerCase;
+}
+console.log(lowerCase("JoAnn"))
