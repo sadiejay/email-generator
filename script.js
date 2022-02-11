@@ -5,6 +5,7 @@
         // first
         // flast
     // remove any whitespace
+    // change input to lower case
     // create different combos of first + last
         // no regex(?) needed
         // insert '.' between inputs
@@ -14,4 +15,11 @@
     // display all the different combos
     // copy option for each individual combo
 
-console.log("hello")
+// remove whitespace
+const removeWhitespace = (str) => {
+    let wsRegex = /\s/g;
+    let noWhiteSpace = str.replace(wsRegex, "");
+    return noWhiteSpace;
+}
+removeWhitespace(" Jo Ann ");
+console.log(removeWhitespace("  Jo Ann  "));
