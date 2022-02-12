@@ -30,3 +30,14 @@ const lowerCase = (str) => {
     return textLowerCase;
 }
 console.log(lowerCase("JoAnn"))
+
+// log input
+const submitButton = document.querySelector('.submit-button');
+const output = document.querySelector('.output');
+
+submitButton.addEventListener('click', function (e){
+    e.preventDefualt();
+    // focus on inputs (maybe a do while or for each loop?)
+    // create variable for each input value
+
+});
