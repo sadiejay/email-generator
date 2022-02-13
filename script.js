@@ -34,10 +34,32 @@ console.log(lowerCase("JoAnn"))
 // log input
 const submitButton = document.querySelector('.submit-button');
 const output = document.querySelector('.output');
+const firstNameInput = document.querySelector('.first-name');
+const lastNameInput = document.querySelector('.last-name');
+const domainNameInput = document.querySelector('.domain-name');
+let inputArray = [];
 
 submitButton.addEventListener('click', function (e){
-    e.preventDefualt();
+    e.preventDefault();
     // focus on inputs (maybe a do while or for each loop?)
+    firstNameInput.focus();
+    lastNameInput.focus();
+    domainNameInput.focus();
     // create variable for each input value
+    let firstNameValue = firstNameInput.value;   
+    let lastNameValue = lastNameInput.value;   
+    let domainNameValue = domainNameInput.value;   
+    // validate input?
+        // new function
+    //  push values to array?
+    inputArray.push(firstNameValue);
+    inputArray.push(lastNameValue);
+    inputArray.push(domainNameValue);
+    // clear values
+    //  firstNameValue = '';
+    //  lastNameValue = '';   
+    //  domainNameValue = '';
 
+    return inputArray
 });
+console.log(inputArray);
