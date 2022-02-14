@@ -63,3 +63,13 @@ submitButton.addEventListener('click', function (e){
     return inputArray
 });
 console.log(inputArray);
+
+// output combos
+// first@domain
+const firstNameOnly = (firstNameValue, domainNameValue) => {
+    let firstNameOnlyOutput = `${firstNameValue}@${domainNameValue}`;
+    output.innerText = `${firstNameOnlyOutput}`;
+    return firstNameOnly;
+}
+
+console.log(firstNameOnly('JoAnn', 'apple.com'));
