@@ -73,3 +73,11 @@ const firstNameOnly = (firstNameValue, domainNameValue) => {
 }
 
 console.log(firstNameOnly('JoAnn', 'apple.com'));
+// first.last@domain
+const firstDotLastName = (firstNameValue, lastNameValue, domainNameValue) => {
+    let firstDotLastNameOutput = `${firstNameValue}.${lastNameValue}@${domainNameValue}`;
+    output.innerText = `${firstDotLastNameOutput}`;
+    return firstDotLastName;
+}
+
+console.log(firstDotLastName('Jo', 'Ann', 'apple.com'));
