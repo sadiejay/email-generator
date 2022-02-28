@@ -81,3 +81,12 @@ const firstDotLastName = (firstNameValue, lastNameValue, domainNameValue) => {
 }
 
 console.log(firstDotLastName('Jo', 'Ann', 'apple.com'));
+
+// firstlast@domain
+const firstLastName = (firstNameValue, lastNameValue, domainNameValue) => {
+    let firstLastNameOutput = `${firstNameValue}.${lastNameValue}@${domainNameValue}`;
+    output.innerText = `${firstLastNameOutput}`;
+    return firstLastName;
+}
+
+console.log(firstLastName('Jo', 'Ann', 'apple.com'));
