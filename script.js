@@ -90,3 +90,13 @@ const firstLastName = (firstNameValue, lastNameValue, domainNameValue) => {
 }
 
 console.log(firstLastName('Jo', 'Ann', 'apple.com'));
+
+// flast@domain
+const fLastName = (firstNameValue, lastNameValue, domainNameValue) => {
+    let firstNameFirstLetter = firstNameValue.slice(0); // should remove all but first character
+    let fLastNameOutput = `${firstNameFirstLetter}${lastNameValue}@${domainNameValue}`;
+    output.innerText = `${fLastNameOutput}`;
+    return fLastName;
+}
+
+console.log(fLastName('Jo', 'Ann', 'apple.com'));
