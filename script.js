@@ -76,7 +76,7 @@ const firstNameOnly = (firstNameValue, domainNameValue) => {
     return firstNameOnly;
 }
 
-console.log(firstNameOnly('JoAnn', 'apple.com'));
+console.log(firstNameOnly('First', 'apple.com'));
 // first.last@domain
 const firstDotLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     let firstDotLastNameOutput = `${firstNameValue}.${lastNameValue}@${domainNameValue}`;
@@ -84,7 +84,7 @@ const firstDotLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     return firstDotLastName;
 }
 
-console.log(firstDotLastName('Jo', 'Ann', 'apple.com'));
+console.log(firstDotLastName('First', 'Last', 'apple.com'));
 
 // firstlast@domain
 const firstLastName = (firstNameValue, lastNameValue, domainNameValue) => {
@@ -93,7 +93,7 @@ const firstLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     return firstLastName;
 }
 
-console.log(firstLastName('Jo', 'Ann', 'apple.com'));
+console.log(firstLastName('First', 'Last', 'apple.com'));
 
 // flast@domain
 const fLastName = (firstNameValue, lastNameValue, domainNameValue) => {
@@ -103,4 +103,4 @@ const fLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     return fLastName;
 }
 
-console.log(fLastName('Jo', 'Ann', 'apple.com'));
+console.log(fLastName('First', 'Last', 'apple.com'));
