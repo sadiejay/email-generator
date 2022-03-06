@@ -33,6 +33,10 @@ console.log(lowerCase("JoAnn"))
 
 // log input
 const submitButton = document.querySelector('.submit-button');
+const firstOnlyOutput = document.querySelector('.first-only');
+const firstDotLastOutput = document.querySelector('.first-dot-last');
+const firstLastoutput = document.querySelector('.first-last');
+const fLastOutput = document.querySelector('.flast');
 const output = document.querySelector('.output');
 const firstNameInput = document.querySelector('.first-name');
 const lastNameInput = document.querySelector('.last-name');
@@ -68,7 +72,7 @@ console.log(inputArray);
 // first@domain
 const firstNameOnly = (firstNameValue, domainNameValue) => {
     let firstNameOnlyOutput = `${firstNameValue}@${domainNameValue}`;
-    output.innerText = `${firstNameOnlyOutput}`;
+    firstOnlyOutput.innerText = `${firstNameOnlyOutput}`;
     return firstNameOnly;
 }
 
@@ -76,7 +80,7 @@ console.log(firstNameOnly('JoAnn', 'apple.com'));
 // first.last@domain
 const firstDotLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     let firstDotLastNameOutput = `${firstNameValue}.${lastNameValue}@${domainNameValue}`;
-    output.innerText = `${firstDotLastNameOutput}`;
+    firstDotLastOutput.innerText = `${firstDotLastNameOutput}`;
     return firstDotLastName;
 }
 
@@ -85,7 +89,7 @@ console.log(firstDotLastName('Jo', 'Ann', 'apple.com'));
 // firstlast@domain
 const firstLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     let firstLastNameOutput = `${firstNameValue}.${lastNameValue}@${domainNameValue}`;
-    output.innerText = `${firstLastNameOutput}`;
+    firstLastoutput.innerText = `${firstLastNameOutput}`;
     return firstLastName;
 }
 
@@ -95,7 +99,7 @@ console.log(firstLastName('Jo', 'Ann', 'apple.com'));
 const fLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     let firstNameFirstLetter = firstNameValue.slice(0); // should remove all but first character
     let fLastNameOutput = `${firstNameFirstLetter}${lastNameValue}@${domainNameValue}`;
-    output.innerText = `${fLastNameOutput}`;
+    fLastOutput.innerText = `${fLastNameOutput}`;
     return fLastName;
 }
 
