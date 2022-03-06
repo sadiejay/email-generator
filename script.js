@@ -33,10 +33,10 @@ console.log(lowerCase("JoAnn"))
 
 // log input
 const submitButton = document.querySelector('.submit-button');
-const firstOnlyOutput = document.querySelector('.first-only');
-const firstDotLastOutput = document.querySelector('.first-dot-last');
-const firstLastoutput = document.querySelector('.first-last');
-const fLastOutput = document.querySelector('.flast');
+const firstOnlyPara = document.querySelector('.first-only');
+const firstDotLastPara = document.querySelector('.first-dot-last');
+const firstLastPara = document.querySelector('.first-last');
+const fLastPara = document.querySelector('.flast');
 const output = document.querySelector('.output');
 const firstNameInput = document.querySelector('.first-name');
 const lastNameInput = document.querySelector('.last-name');
@@ -72,7 +72,7 @@ console.log(inputArray);
 // first@domain
 const firstNameOnly = (firstNameValue, domainNameValue) => {
     let firstNameOnlyOutput = `${firstNameValue}@${domainNameValue}`;
-    firstOnlyOutput.innerText = `${firstNameOnlyOutput}`;
+    firstOnlyPara.innerText = `${firstNameOnlyOutput}`;
     return firstNameOnly;
 }
 
@@ -80,7 +80,7 @@ console.log(firstNameOnly('JoAnn', 'apple.com'));
 // first.last@domain
 const firstDotLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     let firstDotLastNameOutput = `${firstNameValue}.${lastNameValue}@${domainNameValue}`;
-    firstDotLastOutput.innerText = `${firstDotLastNameOutput}`;
+    firstDotLastPara.innerText = `${firstDotLastNameOutput}`;
     return firstDotLastName;
 }
 
@@ -89,7 +89,7 @@ console.log(firstDotLastName('Jo', 'Ann', 'apple.com'));
 // firstlast@domain
 const firstLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     let firstLastNameOutput = `${firstNameValue}${lastNameValue}@${domainNameValue}`;
-    firstLastoutput.innerText = `${firstLastNameOutput}`;
+    firstLastPara.innerText = `${firstLastNameOutput}`;
     return firstLastName;
 }
 
@@ -99,7 +99,7 @@ console.log(firstLastName('Jo', 'Ann', 'apple.com'));
 const fLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     let firstNameFirstLetter = firstNameValue.slice(0); // should remove all but first character
     let fLastNameOutput = `${firstNameFirstLetter}${lastNameValue}@${domainNameValue}`;
-    fLastOutput.innerText = `${fLastNameOutput}`;
+    fLastPara.innerText = `${fLastNameOutput}`;
     return fLastName;
 }
 
