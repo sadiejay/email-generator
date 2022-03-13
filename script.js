@@ -33,7 +33,8 @@ console.log(lowerCase("JoAnn"))
 
 // log input
 const submitButton = document.querySelector('.submit-button');
-const firstOnlyPara = document.querySelector('.first-only');
+// const firstOnlyPara = document.querySelector('.first-only');
+const mainNode = document.querySelector('main');
 const firstDotLastPara = document.querySelector('.first-dot-last');
 const firstLastPara = document.querySelector('.first-last');
 const fLastPara = document.querySelector('.flast');
@@ -72,8 +73,11 @@ console.log(inputArray);
 // first@domain
 const firstNameOnly = (firstNameValue, domainNameValue) => {
     let firstNameOnlyOutput = `${firstNameValue}@${domainNameValue}`;
+    const firstOnlyPara = document.createElement('p');
+    firstOnlyPara.className = "first-only";
     firstOnlyPara.innerText = `${firstNameOnlyOutput}`;
-    return firstNameOnly;
+    mainNode.appendChild(firstOnlyPara)
+    return firstOnlyPara;
 }
 
 console.log(firstNameOnly('First', 'apple.com'));
