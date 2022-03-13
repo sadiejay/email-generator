@@ -75,6 +75,7 @@ const firstNameOnly = (firstNameValue, domainNameValue) => {
     let firstNameOnlyOutput = `${firstNameValue}@${domainNameValue}`;
     const firstOnlyPara = document.createElement('p');
     firstOnlyPara.className = "first-only";
+    // checkout classList
     firstOnlyPara.innerText = `${firstNameOnlyOutput}`;
     mainNode.appendChild(firstOnlyPara)
     return firstOnlyPara;
