@@ -36,7 +36,7 @@ const submitButton = document.querySelector('.submit-button');
 // const firstOnlyPara = document.querySelector('.first-only');
 const mainNode = document.querySelector('main');
 // const firstDotLastPara = document.querySelector('.first-dot-last');
-const firstLastPara = document.querySelector('.first-last');
+// const firstLastPara = document.querySelector('.first-last');
 const fLastPara = document.querySelector('.flast');
 const output = document.querySelector('.output');
 const firstNameInput = document.querySelector('.first-name');
@@ -96,8 +96,10 @@ console.log(firstDotLastName('First', 'Last', 'apple.com'));
 // firstlast@domain
 const firstLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     let firstLastNameOutput = `${firstNameValue}${lastNameValue}@${domainNameValue}`;
+    const firstLastPara = document.createElement('p');
     firstLastPara.innerText = `${firstLastNameOutput}`;
-    return firstLastName;
+    mainNode.appendChild(firstLastPara)
+    return firstLastPara;
 }
 
 console.log(firstLastName('First', 'Last', 'apple.com'));
