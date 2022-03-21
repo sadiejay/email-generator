@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Repo URL: [https://github.com/sadiejay/email-generator](https://github.com/sadiejay/email-generator)
-- Live Site URL: [](#)
+- Live Site URL: [https://sadiejay.github.io/email-generator/](https://sadiejay.github.io/email-generator/)
 
 ## My process
 - Built out basic HTML structure
