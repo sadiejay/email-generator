@@ -37,7 +37,15 @@ Users should be able to:
 ## My process
 - Built out basic HTML structure
 - Added rough logic with vanilla js
-
+  - JS logic is becoming a little easier for me. However, I can see where some for loops could be useful.
+    - my first iteration I'm creating p tags in HTML for each output variation, when I would like to let js add different nodes within a div tag by intaking the 3 possible parameters then running through all of the outputs and displaying within the screen.
+    - but I want to get it to work first then I'll go back and clean it up.
+    - Second interation I used `createElement` which reduces the amount of hard coding needed!
+- Next steps:
+  - Combine all of the functions in a big one?
+  - Figure out the reload situation
+    - react? 👀
+  - Add some design elements
 ### Built with
 
 - Semantic HTML5 markup
@@ -47,10 +55,9 @@ Users should be able to:
 ### What I learned
 
 
-- JS logic is becoming a little easier for me. However, I can see where some for loops could be useful.
-  - my first iteration I'm creating p tags in HTML for each output variation, when I would like to let js add different nodes within a div tag by intaking the 3 possible parameters then running through all of the outputs and displaying within the screen.
-  - but I want to get it to work first then I'll go back and clean it up.
-  - Second interation I used `createElement` whihc reduces the amount of hard coding needed!
+- `createElement()` and `appendChild`
+- It's ok to iterate!!
+  - hard coding the p tags first then using js to dynamically render the inputs allowed me to continue progressing on the project as opposed to getting overwhelmed and giving up.
 
   #### code snippets
 
@@ -58,10 +65,15 @@ Users should be able to:
 ### Continued development
 
 - I think this could be a nice simple project for react or svelte as well.
+  - I would like a panel that shows the last 10 outputs
+    - That could use the
+  - A form that would allow bulk inputs.
+    - That sounds like the inputs would directly populate an array. Then for each through the array and map (maybe) the outputs and display them.
 
 - I'd love to figure out how to validate the emails before leaving this page.
+  - I'm thinking it's some sort of API?
 
-
+- Needs some design attention
 ### Useful resources
 
 - [Regexr](https://regexr.com/) - Regex testing
