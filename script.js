@@ -21,7 +21,7 @@ const removeWhitespace = (str) => {
     let noWhiteSpace = str.replace(wsRegex, "");
     return noWhiteSpace;
 }
-removeWhitespace(" Jo Ann ");
+// removeWhitespace(" Jo Ann ");
 console.log(removeWhitespace("  Jo Ann  "));
 
 // change to lowercase
@@ -37,8 +37,8 @@ const submitButton = document.querySelector('.submit-button');
 const mainNode = document.querySelector('main');
 // const firstDotLastPara = document.querySelector('.first-dot-last');
 // const firstLastPara = document.querySelector('.first-last');
-const fLastPara = document.querySelector('.flast');
-const output = document.querySelector('.output');
+// const fLastPara = document.querySelector('.flast');
+// const output = document.querySelector('.output');
 const firstNameInput = document.querySelector('.first-name');
 const lastNameInput = document.querySelector('.last-name');
 const domainNameInput = document.querySelector('.domain-name');
