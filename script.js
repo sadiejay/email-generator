@@ -108,8 +108,10 @@ console.log(firstLastName('First', 'Last', 'apple.com'));
 const fLastName = (firstNameValue, lastNameValue, domainNameValue) => {
     let firstNameFirstLetter = firstNameValue.slice(0, 1); // should remove all but first character
     let fLastNameOutput = `${firstNameFirstLetter}${lastNameValue}@${domainNameValue}`;
+    const fLastPara = document.createElement('p');
     fLastPara.innerText = `${fLastNameOutput}`;
-    return fLastName;
+    mainNode.appendChild(fLastPara)
+    return fLastPara;
 }
 
 console.log(fLastName('First', 'Last', 'apple.com'));
