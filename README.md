@@ -42,7 +42,8 @@ Users should be able to:
     - but I want to get it to work first then I'll go back and clean it up.
     - Second interation I used `createElement` which reduces the amount of hard coding needed!
 - Next steps:
-  - Combine all of the functions in a big one?
+  - Combine modular functions?
+    - 
   - Figure out the reload situation
     - react? 👀
   - Add some design elements
@@ -76,6 +77,7 @@ Users should be able to:
 - Needs some design attention
 ### Useful resources
 
+- [Find that Email](https://findthat.email/dashboard/find-emails/) - My inspiration for this project
 - [Regexr](https://regexr.com/) - Regex testing
 - [JS .toLowerCase](https://www.w3schools.com/jsref/jsref_tolowercase.asp)
 - [Temporarily Ignoring Files](https://gitready.com/intermediate/2009/02/18/temporarily-ignoring-files.html) - Super handy for keeping files (looking at you README) untracked while making changes continuously using `git update-index --assume-unchanged <file>` and `git update-index --no-assume-unchanged <file>` to start tracking again.
